@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(152, 126, 126);
+    /* Use a system font, if none are available use an available sans-sarif */
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 325px;
+  
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  font-size: 64px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--- rgb(180, 171, 155));
+  font-size: 20px;
+  text-align: center; 
+ 
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
