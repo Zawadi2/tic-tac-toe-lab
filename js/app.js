@@ -17,10 +17,7 @@ const winningCombos = [
 /*---------------------------- Variables (state) ----------------------------*/
 
 
-let board 
-let turn = 'x';
-let winner = false;
-let tie = false;
+let board, winner, tie, turn;
 
  
 
@@ -30,7 +27,7 @@ let tie = false;
 /*------------------------ Cached Element References ------------------------*/
 //2) Store cached element references.
 
-const resetBtnEl = document.getElementById('reset');
+const resetBtnEl = document.getElementById('resetBtn');
 // const boards = document.querySelectorAll('board');
  
 
@@ -50,7 +47,7 @@ function init() {
     '', '', '',
     '', '', ''
     ];
-  turn = 'x';
+  turn = 'X';
   winner = false;
   tie = false;
   render();
@@ -118,7 +115,7 @@ init();
 squareEls.forEach((square) => {
   square.addEventListener('click', handleClick)
 });
-gameBoardEl.addEventListener('click', handleClick);
+// gameBoardEl.addEventListener('click', handleClick);
 
 resetBtnEl.addEventListener('click', init);
 
